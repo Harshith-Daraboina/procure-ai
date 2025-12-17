@@ -1,0 +1,23 @@
+{
+    "SKU-1001": {
+        "unitPrice": 4500,
+        "currency": "USD"
+    },
+    "SKU-1002": {
+        "unitPrice": 6200,
+        "currency": "USD"
+    },
+    "SKU-2001": {
+        "unitPrice": 850,
+        "currency": "USD"
+    },
+    "SKU-2002": {
+        "unitPrice": 1200,
+        "currency": "USD"
+    },
+    "testing": {
+        "standard_hydrostatic": 250,
+        "material_certification": 100,
+        "performance_test": 500
+    }
+}

@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+
+}
+
+model User {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String   @unique
+  role      String   // Procurement, Finance, Executive
+  createdAt DateTime @default(now())
+}
+
+model RFP {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  dueDate     DateTime
+  status      String   // Active, Completed
+  summary     Json
+  createdAt   DateTime @default(now())
+}
+
+model Proposal {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  rfpId       String   @db.ObjectId
+  technical   Json
+  pricing     Json
+  riskScore   Int
+  status      String   // Pending, Approved, Rejected
+  createdAt   DateTime @default(now())
+}

@@ -1,0 +1,48 @@
+[
+    {
+        "id": "SKU-1001",
+        "name": "Industrial High-Pressure Pump A1",
+        "specs": {
+            "flowRate": "500 L/min",
+            "maxPressure": "150 bar",
+            "power": "15 kW",
+            "material": "Stainless Steel 316",
+            "temperatureRange": "-20 to 120 C"
+        },
+        "category": "Pumps"
+    },
+    {
+        "id": "SKU-1002",
+        "name": "Industrial High-Pressure Pump A2 (Heavy Duty)",
+        "specs": {
+            "flowRate": "800 L/min",
+            "maxPressure": "200 bar",
+            "power": "22 kW",
+            "material": "Stainless Steel 316L",
+            "temperatureRange": "-30 to 150 C"
+        },
+        "category": "Pumps"
+    },
+    {
+        "id": "SKU-2001",
+        "name": "Control Valve V1",
+        "specs": {
+            "size": "DN50",
+            "pressureClass": "PN40",
+            "actuatorType": "Pneumatic",
+            "material": "Cast Iron"
+        },
+        "category": "Valves"
+    },
+    {
+        "id": "SKU-2002",
+        "name": "Control Valve V2 (High Temp)",
+        "specs": {
+            "size": "DN50",
+            "pressureClass": "PN64",
+            "actuatorType": "Electric",
+            "material": "Cast Steel"
+        },
+        "category": "Valves"
+    }
+]
